@@ -7,7 +7,7 @@ package com.xyzcorp;
  *        email: <a href="mailto:dhinojosa@evolutionnext.com">dhinojosa@evolutionnext.com</a>
  *        tel: 505.363.5832
  */
-public class Employee {
+public class Employee extends Object {
     private double pay;
 
     public Employee(String firstName, String lastName, double pay) {
