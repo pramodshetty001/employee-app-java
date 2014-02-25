@@ -34,6 +34,9 @@ public class Employee extends Object {
     }
 
     public void setFirstName(String firstName) {
+        if (firstName.startsWith("Mr.") || firstName.startsWith("Ms.")) {
+            throw new IllegalArgumentException("No titles please");
+        }
         this.firstName = firstName;
     }
 }
