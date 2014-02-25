@@ -11,6 +11,6 @@ public class EmployeeTest {
     @Test
     public void testMiddleName() {
         Employee employee = new Employee("Harry", "S", "Truman");
-        assertEquals("S", employee.getMiddleName());
+        assertEquals("Z", employee.getMiddleName());
     }
 }
