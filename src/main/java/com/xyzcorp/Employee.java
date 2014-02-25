@@ -10,6 +10,7 @@ package com.xyzcorp;
 public class Employee extends Object {
     private double pay;
     private String middleName;
+    private String firstName;
 
     public Employee(String firstName, String lastName, double pay) {
         this.pay = pay;
@@ -30,5 +31,9 @@ public class Employee extends Object {
 
     public String getMiddleName() {
         return middleName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 }
