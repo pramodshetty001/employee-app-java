@@ -9,9 +9,15 @@ package com.xyzcorp;
  */
 public class Employee extends Object {
     private double pay;
+    private String middleName;
 
     public Employee(String firstName, String lastName, double pay) {
         this.pay = pay;
+    }
+
+    public Employee(String firstName, String middleName, String lastName) {
+        this(firstName, lastName, 0.0);
+        this.middleName = middleName;
     }
 
     public double getPay() {
@@ -20,5 +26,9 @@ public class Employee extends Object {
 
     public void setPay(double pay) {
         this.pay = pay;
+    }
+
+    public String getMiddleName() {
+        return middleName;
     }
 }
