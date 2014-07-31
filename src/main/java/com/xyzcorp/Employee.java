@@ -11,8 +11,11 @@ public class Employee extends Object {
     private double pay;
     private String middleName;
     private String firstName;
+    private String lastName;
 
     public Employee(String firstName, String lastName, double pay) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.pay = pay;
     }
 
